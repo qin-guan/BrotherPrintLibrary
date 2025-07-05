@@ -1,8 +1,5 @@
-using Android.Runtime;
-
 namespace Com.Brother.Sdk.Lmprinter.Setting
 {
-
   public partial class PJPrintSettings
   {
 
