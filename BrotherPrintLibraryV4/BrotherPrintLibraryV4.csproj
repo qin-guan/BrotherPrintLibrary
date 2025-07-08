@@ -1,17 +1,33 @@
 <Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-    <TargetFramework>net9.0-android</TargetFramework>
-    <SupportedOSPlatformVersion>21</SupportedOSPlatformVersion>
-    <Nullable>enable</Nullable>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <!--
-      Enable trim analyzers for Android class libraries.
-      To learn more, see: https://learn.microsoft.com/dotnet/core/deploying/trimming/prepare-libraries-for-trimming
-    -->
-    <IsTrimmable>true</IsTrimmable>
-    <!--
-      NOTE: you can simply add .aar or .jar files in this directory to be included in the project.
-      To learn more, see: https://learn.microsoft.com/dotnet/maui/migration/android-binding-projects
-    -->
-  </PropertyGroup>
+    <PropertyGroup>
+        <PackageId>BrotherPrintLibraryV4</PackageId>
+        <PackageTags>brother,printer,label</PackageTags>
+        <PackageProjectUrl>https://github.com/qin-guan/BrotherPrintLibrary</PackageProjectUrl>
+        <PackageLicenseFile>LICENSE</PackageLicenseFile>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+
+        <Version>0.0.4121</Version>
+        <Authors>Qin Guan</Authors>
+        <Copyright>Brother Mobile Solutions</Copyright>
+        <RepositoryUrl>https://github.com/qin-guan/BrotherPrintLibrary</RepositoryUrl>
+
+        <TargetFramework>net9.0-android</TargetFramework>
+        <SupportedOSPlatformVersion>21</SupportedOSPlatformVersion>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <!--
+          Enable trim analyzers for Android class libraries.
+          To learn more, see: https://learn.microsoft.com/dotnet/core/deploying/trimming/prepare-libraries-for-trimming
+        -->
+        <IsTrimmable>true</IsTrimmable>
+        <!--
+          NOTE: you can simply add .aar or .jar files in this directory to be included in the project.
+          To learn more, see: https://learn.microsoft.com/dotnet/maui/migration/android-binding-projects
+        -->
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Include="..\LICENSE" Pack="true" PackagePath=""/>
+        <None Include="..\README.md" Pack="true" PackagePath=""/>
+    </ItemGroup>
 </Project>
